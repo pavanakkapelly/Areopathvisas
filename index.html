@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AreoPathVisas – Student Study Visa Services | Hanamkonda, Telangana</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bd:#0a1f5c;--bm:#1a3a9c;--bb:#1e56d9;--bl:#3b82f6;
+  --bp:#dbeafe;--wh:#ffffff;--ow:#f0f6ff;--td:#0f172a;
+  --tm:#334155;--ac:#fbbf24;--gr:#22c55e;
+  --sh:0 8px 32px rgba(30,86,217,.15);--shl:0 20px 60px rgba(10,31,92,.2);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--wh);color:var(--td);overflow-x:hidden;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(30,86,217,.1);
+  padding:0 4%;display:flex;align-items:center;justify-content:space-between;height:68px;}
+.logo{font-size:1.4rem;font-weight:800;color:var(--bd);letter-spacing:-.5px;text-decoration:none;}
+.logo span{color:var(--bb);}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{text-decoration:none;font-weight:500;font-size:.82rem;color:var(--tm);transition:color .2s;}
+.nav-links a:hover{color:var(--bb);}
+.nav-cta{background:var(--bb);color:white;padding:9px 18px;border-radius:50px;
+  text-decoration:none;font-weight:600;font-size:.8rem;transition:all .3s;
+  box-shadow:0 4px 15px rgba(30,86,217,.3);}
+.nav-cta:hover{background:var(--bd);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.hamburger span{width:24px;height:2px;background:var(--bd);border-radius:2px;display:block;}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(135deg,var(--bd) 0%,var(--bm) 45%,var(--bb) 100%);
+  position:relative;overflow:hidden;display:flex;align-items:center;padding:100px 5% 60px;}
+.hero::before{content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");}
+.hb1{position:absolute;right:-100px;top:-100px;width:600px;height:600px;
+  background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+.hb2{position:absolute;left:-80px;bottom:-80px;width:400px;height:400px;
+  background:radial-gradient(circle,rgba(251,191,36,.08) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+.hc{position:relative;z-index:2;max-width:660px;}
+.hbadge{display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);
+  color:white;padding:8px 18px;border-radius:50px;font-size:.76rem;font-weight:600;
+  margin-bottom:20px;animation:fu .6s ease both;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5.5vw,4rem);
+  color:white;line-height:1.1;font-weight:900;margin-bottom:16px;animation:fu .6s .1s ease both;}
+.hero h1 span{color:var(--ac);}
+.hero>div>p{color:rgba(255,255,255,.85);font-size:.95rem;line-height:1.7;margin-bottom:28px;animation:fu .6s .2s ease both;}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap;animation:fu .6s .3s ease both;}
+.bgold{background:var(--ac);color:var(--bd);padding:12px 26px;border-radius:50px;
+  font-weight:700;font-size:.88rem;text-decoration:none;transition:all .3s;
+  box-shadow:0 6px 20px rgba(251,191,36,.4);display:inline-flex;align-items:center;gap:7px;}
+.bgold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(251,191,36,.5);}
+.bwa{background:#25D366;color:white;padding:12px 26px;border-radius:50px;
+  font-weight:700;font-size:.88rem;text-decoration:none;transition:all .3s;
+  box-shadow:0 6px 20px rgba(37,211,102,.35);display:inline-flex;align-items:center;gap:7px;}
+.bwa:hover{transform:translateY(-2px);background:#1eaa55;}
+.hflags{display:flex;gap:8px;margin-top:36px;flex-wrap:wrap;animation:fu .6s .4s ease both;}
+.fpill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.13);
+  backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);
+  color:white;padding:7px 13px;border-radius:50px;font-size:.72rem;font-weight:600;
+  cursor:pointer;transition:all .3s;}
+.fpill:hover{background:rgba(255,255,255,.25);transform:translateY(-2px);}
+.hstats{display:flex;gap:24px;margin-top:30px;animation:fu .6s .5s ease both;flex-wrap:wrap;}
+.hstat .num{font-size:1.7rem;font-weight:900;color:var(--ac);line-height:1;}
+.hstat .lbl{color:rgba(255,255,255,.7);font-size:.7rem;margin-top:2px;}
+
+/* SECTIONS */
+.sec{padding:70px 5%;}
+.slbl{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:2.5px;
+  color:var(--bb);text-transform:uppercase;margin-bottom:9px;}
+.stitle{text-align:center;font-family:'Playfair Display',serif;
+  font-size:clamp(1.6rem,3.8vw,2.5rem);font-weight:800;color:var(--bd);margin-bottom:40px;line-height:1.2;}
+.stitle span{color:var(--bb);}
+
+/* COUNTRY TABS */
+.csec{background:var(--ow);}
+.ctabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;}
+.ctab{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:50px;
+  border:2px solid #e2e8f0;background:white;cursor:pointer;font-family:'Poppins',sans-serif;
+  font-size:.78rem;font-weight:600;color:var(--tm);transition:all .25s;}
+.ctab:hover{border-color:var(--bb);color:var(--bb);}
+.ctab.active{background:var(--bb);border-color:var(--bb);color:white;
+  box-shadow:0 6px 18px rgba(30,86,217,.3);}
+.cpanel{display:none;animation:fi .4s ease;}
+.cpanel.active{display:block;}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* COUNTRY CARD */
+.chero{background:white;border-radius:22px;overflow:hidden;box-shadow:var(--shl);margin-bottom:24px;}
+.cbanner{padding:36px 38px;position:relative;overflow:hidden;}
+.cbi{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+.ctitle{display:flex;align-items:center;gap:14px;}
+.cflag{font-size:3.2rem;}
+.ctitle h2{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:white;}
+.ctitle p{color:rgba(255,255,255,.8);font-size:.82rem;margin-top:3px;}
+.cstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1px;background:#f0f0f0;}
+.cstat{background:white;padding:16px;text-align:center;}
+.cstat .cv{font-size:1rem;font-weight:800;color:var(--bd);}
+.cstat .cl{font-size:.67rem;color:var(--tm);margin-top:2px;}
+
+/* CONTENT GRID */
+.ccontent{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+.ccard{background:white;border-radius:16px;padding:22px;box-shadow:var(--sh);}
+.ccard h3{font-weight:700;color:var(--bd);font-size:.9rem;margin-bottom:12px;display:flex;align-items:center;gap:7px;}
+.rlist{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.rlist li{display:flex;align-items:flex-start;gap:8px;font-size:.8rem;color:var(--tm);line-height:1.5;}
+.rlist li::before{content:'✅';flex-shrink:0;}
+.rlist li.resume::before{content:'📄';}
+.ugrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.ui{background:var(--ow);border-radius:9px;padding:9px 11px;}
+.ui .un{font-weight:700;color:var(--bd);font-size:.77rem;}
+.ui .us{color:var(--tm);font-size:.7rem;margin-top:1px;}
+.cgrid2{display:flex;flex-direction:column;gap:7px;}
+.crow{display:flex;justify-content:space-between;align-items:center;padding:8px 11px;background:var(--ow);border-radius:8px;font-size:.78rem;}
+.crow .ck{color:var(--tm);}
+.crow .cvv{font-weight:700;color:var(--bd);}
+.vsteps{display:flex;flex-direction:column;gap:8px;}
+.vs{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #f1f5f9;}
+.vs:last-child{border-bottom:none;}
+.vn{width:22px;height:22px;border-radius:50%;background:var(--bb);color:white;
+  font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.vt{font-size:.78rem;color:var(--tm);line-height:1.5;}
+.vt strong{color:var(--bd);display:block;font-size:.8rem;}
+
+/* APPLY BANNER */
+.abanner{border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+.abanner h3{color:white;font-size:.95rem;font-weight:700;}
+.abanner p{color:rgba(255,255,255,.75);font-size:.78rem;margin-top:3px;}
+.abtns{display:flex;gap:10px;flex-wrap:wrap;}
+
+/* SERVICES */
+.svcs{background:white;}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;max-width:1100px;margin:0 auto;}
+.scard{background:var(--ow);border-radius:16px;padding:28px 22px;transition:all .3s;
+  position:relative;overflow:hidden;border:2px solid transparent;}
+.scard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--bb),var(--bl));border-radius:3px 3px 0 0;}
+.scard:hover{border-color:var(--bl);transform:translateY(-4px);box-shadow:var(--shl);background:white;}
+.sico{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--bb),var(--bl));
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:14px;
+  box-shadow:0 6px 16px rgba(30,86,217,.25);}
+.scard h3{font-weight:700;color:var(--bd);font-size:.88rem;margin-bottom:6px;}
+.scard p{color:var(--tm);font-size:.78rem;line-height:1.6;}
+
+/* PROCESS */
+.psec{background:var(--bd);}
+.psec .slbl{color:var(--ac);}
+.psec .stitle{color:white;}
+.psec .stitle span{color:var(--ac);}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;max-width:1100px;margin:0 auto;}
+.pstep{text-align:center;padding:24px 14px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:16px;transition:all .3s;}
+.pstep:hover{background:rgba(255,255,255,.1);transform:translateY(-4px);}
+.pnum{width:44px;height:44px;border-radius:50%;background:var(--ac);color:var(--bd);
+  font-weight:800;font-size:1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+.pstep h3{color:white;font-weight:700;font-size:.82rem;margin-bottom:6px;}
+.pstep p{color:rgba(255,255,255,.6);font-size:.74rem;line-height:1.5;}
+
+/* WHY */
+.wsec{background:var(--ow);}
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px;max-width:1100px;margin:0 auto;align-items:center;}
+.wcnt h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.2vw,2.3rem);
+  font-weight:800;color:var(--bd);margin-bottom:12px;line-height:1.2;}
+.wcnt>p{color:var(--tm);line-height:1.7;margin-bottom:22px;font-size:.87rem;}
+.wfts{display:flex;flex-direction:column;gap:11px;}
+.wf{display:flex;gap:12px;align-items:flex-start;background:white;padding:14px 15px;
+  border-radius:12px;box-shadow:0 4px 14px rgba(30,86,217,.08);transition:all .3s;}
+.wf:hover{box-shadow:var(--sh);transform:translateX(4px);}
+.wf .wi{width:38px;height:38px;border-radius:10px;background:var(--bp);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.wf h4{font-weight:700;color:var(--bd);font-size:.8rem;margin-bottom:2px;}
+.wf p{color:var(--tm);font-size:.74rem;margin:0;}
+.wvis{background:linear-gradient(135deg,var(--bd),var(--bb));border-radius:20px;padding:32px;color:white;box-shadow:var(--shl);}
+.wvis h3{font-size:1.1rem;font-weight:700;margin-bottom:16px;}
+.fbadge{background:var(--ac);color:var(--bd);font-size:1.9rem;font-weight:900;
+  text-align:center;padding:22px;border-radius:13px;margin-bottom:14px;
+  text-transform:uppercase;letter-spacing:2px;line-height:1.2;}
+.cl2{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);
+  border-radius:10px;padding:11px 14px;margin-bottom:8px;text-decoration:none;color:white;
+  transition:all .3s;font-size:.8rem;font-weight:500;}
+.cl2:hover{background:rgba(255,255,255,.22);}
+
+/* TESTIMONIALS */
+.tsec{background:white;}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:1100px;margin:0 auto;}
+.tc{background:var(--ow);border-radius:16px;padding:22px;border-left:4px solid var(--bb);transition:all .3s;}
+.tc:hover{box-shadow:var(--sh);transform:translateY(-4px);}
+.stars{color:var(--ac);font-size:.88rem;margin-bottom:8px;}
+.tc p{color:var(--tm);font-size:.78rem;line-height:1.6;margin-bottom:12px;font-style:italic;}
+.tau{font-weight:700;color:var(--bd);font-size:.8rem;}
+.tdes{color:var(--bb);font-size:.71rem;}
+
+/* CONTACT */
+.consec{padding:70px 5%;background:linear-gradient(135deg,var(--bd),var(--bm));position:relative;overflow:hidden;}
+.conin{position:relative;z-index:2;max-width:1100px;margin:0 auto;}
+.consec .slbl{color:var(--ac);}
+.consec .stitle{color:white;}
+.cgr{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.cfrm{background:white;border-radius:20px;padding:30px;}
+.cfrm h3{font-weight:700;color:var(--bd);margin-bottom:18px;font-size:.92rem;}
+.fg{margin-bottom:12px;}
+.fg label{display:block;font-size:.74rem;font-weight:600;color:var(--tm);margin-bottom:4px;}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 13px;border-radius:9px;
+  border:2px solid #e2e8f0;font-family:'Poppins',sans-serif;font-size:.8rem;
+  color:var(--td);transition:border-color .2s;outline:none;background:var(--ow);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--bb);background:white;}
+.fg textarea{resize:vertical;min-height:80px;}
+.bsub{width:100%;padding:12px;background:var(--bb);color:white;border:none;border-radius:9px;
+  font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;
+  transition:all .3s;box-shadow:0 6px 18px rgba(30,86,217,.3);}
+.bsub:hover{background:var(--bd);transform:translateY(-1px);}
+.cin{color:white;}
+.cin h3{font-size:1.2rem;font-weight:700;margin-bottom:12px;}
+.cin>p{color:rgba(255,255,255,.75);line-height:1.7;margin-bottom:20px;font-size:.83rem;}
+.icds{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
+.icd{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:12px 15px;
+  text-decoration:none;color:white;transition:all .3s;}
+.icd:hover{background:rgba(255,255,255,.2);transform:translateX(4px);}
+.icd .ic{font-size:1.1rem;}
+.icd .it h4{font-weight:700;font-size:.8rem;margin-bottom:1px;}
+.icd .it p{color:rgba(255,255,255,.7);font-size:.74rem;margin:0;}
+.sbs{display:flex;gap:9px;flex-wrap:wrap;}
+.sb{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:50px;
+  font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;}
+.sbwa{background:#25D366;color:white;}
+.sbwa:hover{background:#1eaa55;transform:translateY(-2px);}
+.sbph{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.3);}
+.sbph:hover{background:rgba(255,255,255,.25);transform:translateY(-2px);}
+
+footer{background:#050e2d;color:rgba(255,255,255,.7);padding:40px 5% 22px;text-align:center;}
+.flo{font-size:1.3rem;font-weight:800;color:white;margin-bottom:6px;}
+.flo span{color:var(--bl);}
+footer p{font-size:.78rem;margin-bottom:4px;}
+.fls{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:12px 0;}
+.fls a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.73rem;transition:color .2s;}
+.fls a:hover{color:white;}
+.fdiv{height:1px;background:rgba(255,255,255,.1);margin:14px 0;}
+.fcp{font-size:.68rem;color:rgba(255,255,255,.35);}
+
+.fwa{position:fixed;bottom:24px;right:24px;z-index:1000;width:54px;height:54px;
+  border-radius:50%;background:#25D366;color:white;display:flex;align-items:center;
+  justify-content:center;font-size:1.5rem;text-decoration:none;
+  box-shadow:0 6px 20px rgba(37,211,102,.45);transition:all .3s;animation:pulse 2s infinite;}
+.fwa:hover{transform:scale(1.1);background:#1eaa55;}
+@keyframes pulse{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.45);}50%{box-shadow:0 6px 40px rgba(37,211,102,.7);}}
+@keyframes fu{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease;}
+.rv.vis{opacity:1;transform:translateY(0);}
+
+#toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(18px);
+  background:var(--bd);color:white;padding:11px 22px;border-radius:50px;
+  font-size:.8rem;font-weight:500;opacity:0;transition:all .3s;z-index:9999;pointer-events:none;
+  box-shadow:var(--shl);white-space:nowrap;}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .nav-links.open{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;
+    background:white;box-shadow:0 10px 30px rgba(0,0,0,.1);padding:10px 5%;z-index:998;}
+  .nav-links.open li a{display:block;padding:9px 0;border-bottom:1px solid #f0f0f0;}
+  .ccontent,.wgrid,.cgr{grid-template-columns:1fr;}
+  .ugrid{grid-template-columns:1fr;}
+  .cbi{flex-direction:column;align-items:flex-start;}
+  .cin{order:-1;}
+  .abanner{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<a class="fwa" href="https://wa.me/917680821953?text=Hello%20AreoPathVisas!%20I%20need%20help%20with%20student%20visa." target="_blank">💬</a>
+<div id="toast">✅ Sent! We will call you back soon.</div>
+
+<nav>
+  <a class="logo" href="#home">Areo<span>Path</span>Visas</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#dest">Destinations</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/917680821953?text=Hello!%20I%20need%20a%20free%20consultation." target="_blank" class="nav-cta">Free Consultation 🎓</a>
+  <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hb1"></div><div class="hb2"></div>
+  <div class="hc">
+    <div class="hbadge">✈ Hanamkonda, Telangana's #1 Student Visa Consultancy</div>
+    <h1>Your Dream<br/>Study <span>Abroad</span><br/>Starts Here</h1>
+    <p>Expert student visa guidance for USA, UK, Canada, Australia, New Zealand, Ireland, Singapore and Europe. We handle everything from eligibility to enrollment!</p>
+    <div class="hbtns">
+      <a href="https://wa.me/917680821953?text=Hello%20AreoPathVisas!%20I%20want%20a%20free%20consultation!" target="_blank" class="bgold">📞 Free Consultation</a>
+      <a href="https://wa.me/917680821953?text=Hi!%20I%20need%20student%20visa%20help." target="_blank" class="bwa">💬 WhatsApp Us</a>
+    </div>
+    <div class="hflags">
+      <div class="fpill" onclick="openC('usa')"><span>🇺🇸</span><span>USA</span></div>
+      <div class="fpill" onclick="openC('uk')"><span>🇬🇧</span><span>UK</span></div>
+      <div class="fpill" onclick="openC('canada')"><span>🇨🇦</span><span>Canada</span></div>
+      <div class="fpill" onclick="openC('australia')"><span>🇦🇺</span><span>Australia</span></div>
+      <div class="fpill" onclick="openC('nz')"><span>🇳🇿</span><span>New Zealand</span></div>
+      <div class="fpill" onclick="openC('ireland')"><span>🇮🇪</span><span>Ireland</span></div>
+      <div class="fpill" onclick="openC('singapore')"><span>🇸🇬</span><span>Singapore</span></div>
+      <div class="fpill" onclick="openC('europe')"><span>🇪🇺</span><span>Europe</span></div>
+    </div>
+    <div class="hstats">
+      <div class="hstat"><div class="num">700+</div><div class="lbl">Visas Approved</div></div>
+      <div class="hstat"><div class="num">8</div><div class="lbl">Countries</div></div>
+      <div class="hstat"><div class="num">98%</div><div class="lbl">Success Rate</div></div>
+      <div class="hstat"><div class="num">5★</div><div class="lbl">Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="sec csec" id="dest">
+  <p class="slbl rv">Study Destinations</p>
+  <h2 class="stitle rv">Choose Your <span>Dream Country</span></h2>
+  <div class="ctabs rv">
+    <button class="ctab active" onclick="switchTab('usa',this)">🇺🇸 USA</button>
+    <button class="ctab" onclick="switchTab('uk',this)">🇬🇧 UK</button>
+    <button class="ctab" onclick="switchTab('canada',this)">🇨🇦 Canada</button>
+    <button class="ctab" onclick="switchTab('australia',this)">🇦🇺 Australia</button>
+    <button class="ctab" onclick="switchTab('nz',this)">🇳🇿 New Zealand</button>
+    <button class="ctab" onclick="switchTab('ireland',this)">🇮🇪 Ireland</button>
+    <button class="ctab" onclick="switchTab('singapore',this)">🇸🇬 Singapore</button>
+    <button class="ctab" onclick="switchTab('europe',this)">🇪🇺 Europe</button>
+  </div>
+
+  <!-- ===== USA ===== -->
+  <div class="cpanel active" id="panel-usa">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#b22234,#3c3b6e);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇺🇸</div>
+            <div><h2>United States of America</h2><p>World's Top Ranked Universities • F-1 Student Visa • OPT and STEM Extension</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20USA%20F-1%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for USA Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">F-1 Visa</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">60–90 Days</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">$20K–$60K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">3 Yrs OPT</div><div class="cl">Work After Study</div></div>
+        <div class="cstat"><div class="cv">4,000+</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Valid passport (min 6 months validity)</li>
+          <li>I-20 form from a SEVP-approved US university</li>
+          <li>SEVIS fee payment – Form I-901 ($350)</li>
+          <li>DS-160 Online Nonimmigrant Visa Application</li>
+          <li>TOEFL 80+ or IELTS 6.5+ (English proficiency)</li>
+          <li>GRE / GMAT scores (for postgraduate programs)</li>
+          <li>Bank statements showing Rs 30–50 Lakh+</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>2–3 Letters of Recommendation (LORs)</li>
+          <li>Academic transcripts and mark sheets</li>
+          <li class="resume">Updated Resume / CV (showing academics and achievements)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">MIT</div><div class="us">Massachusetts Inst. of Technology</div></div>
+          <div class="ui"><div class="un">Stanford</div><div class="us">Stanford University, California</div></div>
+          <div class="ui"><div class="un">Harvard</div><div class="us">Harvard University, Boston</div></div>
+          <div class="ui"><div class="un">Carnegie Mellon</div><div class="us">CMU, Pittsburgh</div></div>
+          <div class="ui"><div class="un">UT Austin</div><div class="us">University of Texas, Austin</div></div>
+          <div class="ui"><div class="un">ASU</div><div class="us">Arizona State University</div></div>
+          <div class="ui"><div class="un">Purdue</div><div class="us">Purdue University, Indiana</div></div>
+          <div class="ui"><div class="un">UIUC</div><div class="us">Univ. Illinois Urbana-Champaign</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">$500–$1,200</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">$300–$500</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">$80–$150</span></div>
+          <div class="crow"><span class="ck">Books and Supplies</span><span class="cvv">$100–$200</span></div>
+          <div class="crow"><span class="ck">Health Insurance</span><span class="cvv">$100–$200</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">$1,100–$2,200</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get University Admission + I-20</strong>Apply to SEVP-approved US universities. Receive your I-20 form after admission.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Pay SEVIS Fee (I-901)</strong>Pay the SEVIS fee of $350 online at FMJfee.com. Keep the receipt for the interview.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Fill DS-160 Visa Application</strong>Complete DS-160 form online carefully. Upload your photo as per US visa specs.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Pay Visa Fee and Schedule Interview</strong>Pay MRV fee ($185) and book interview at US Embassy in Hyderabad, Mumbai, Chennai, Delhi or Kolkata.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Attend Visa Interview</strong>Carry all documents including I-20, SOP, financials, transcripts and resume. Be confident about study plans.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Visa Stamping and Travel ✈</strong>Receive passport with F-1 visa stamp. Enter USA within 30 days before program start date.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Post Arrival – OPT and STEM</strong>After graduation apply for OPT (1 year). STEM graduates can extend to 3 years total work authorization.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#b22234,#3c3b6e);">
+      <div><h3>🇺🇸 Ready to Study in the USA?</h3><p>100+ students got F-1 visa through us. Book your free consultation today!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20to%20apply%20for%20USA%20F-1%20Student%20Visa.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== UK ===== -->
+  <div class="cpanel" id="panel-uk">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#012169,#C8102E);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇬🇧</div>
+            <div><h2>United Kingdom</h2><p>Prestigious Universities • Student Visa (Tier 4) • 2-Year Graduate Route Post-Study Work</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20UK%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for UK Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">Student Visa</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">3–8 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">£15K–£35K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">2 Yr Graduate</div><div class="cl">Post Study Work</div></div>
+        <div class="cstat"><div class="cv">160+</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>CAS (Confirmation of Acceptance for Studies) from UK university</li>
+          <li>Valid passport with 6+ months validity</li>
+          <li>IELTS Academic: 6.0–6.5 (each band minimum)</li>
+          <li>Financial proof: £1,334/month London, £1,023 outside London</li>
+          <li>Tuberculosis (TB) test certificate from approved clinic in India</li>
+          <li>ATAS certificate for certain STEM subjects</li>
+          <li>Academic transcripts and degree certificates</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>2–3 Letters of Recommendation (LORs)</li>
+          <li>Immigration Health Surcharge (IHS) payment receipt</li>
+          <li class="resume">Updated Resume / CV (academic and professional background)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">Oxford</div><div class="us">University of Oxford</div></div>
+          <div class="ui"><div class="un">Cambridge</div><div class="us">University of Cambridge</div></div>
+          <div class="ui"><div class="un">Imperial</div><div class="us">Imperial College London</div></div>
+          <div class="ui"><div class="un">UCL</div><div class="us">University College London</div></div>
+          <div class="ui"><div class="un">Edinburgh</div><div class="us">University of Edinburgh</div></div>
+          <div class="ui"><div class="un">Manchester</div><div class="us">University of Manchester</div></div>
+          <div class="ui"><div class="un">Warwick</div><div class="us">University of Warwick</div></div>
+          <div class="ui"><div class="un">Nottingham</div><div class="us">University of Nottingham</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">£600–£1,200</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">£200–£350</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">£50–£120</span></div>
+          <div class="crow"><span class="ck">Phone and Internet</span><span class="cvv">£20–£40</span></div>
+          <div class="crow"><span class="ck">Entertainment</span><span class="cvv">£50–£100</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">£1,000–£1,900</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get University Offer and CAS Number</strong>Apply to UK universities, receive conditional or unconditional offer, then get CAS number.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Pass IELTS and Prepare Documents</strong>Achieve the required IELTS Academic score and gather all documents including resume and SOP.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Pay Immigration Health Surcharge (IHS)</strong>Pay IHS online at £470 per year of study. Save your IHS reference number for the application.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Submit Online Visa Application (UKVI)</strong>Apply on UKVI website. Upload all documents and pay the Student Visa fee of £363.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Biometric Enrollment at VFS Global</strong>Book appointment at VFS Global centre in Hyderabad or nearby city for fingerprints and photo.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>TB Test Certificate</strong>Get Tuberculosis test done at UKVI approved clinic in Hyderabad. Certificate valid for 6 months.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Visa Decision and Travel ✈</strong>Decision in 3–8 weeks. Collect BRP (Biometric Residence Permit) within 10 days of arriving in UK.</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>Post Study – Graduate Route Visa</strong>After graduation apply for 2-year Graduate Route visa to work in UK (3 years for PhD graduates).</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#012169,#C8102E);">
+      <div><h3>🇬🇧 Ready to Study in the UK?</h3><p>We have helped hundreds of Telangana students land at top UK universities. Start today!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20UK%20Student%20Visa.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CANADA ===== -->
+  <div class="cpanel" id="panel-canada">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#a00000,#d80621);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇨🇦</div>
+            <div><h2>Canada</h2><p>Study Permit • PGWP up to 3 Years • Best Pathway to Permanent Residency</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Canada%20Study%20Permit%20help." target="_blank" class="bwa">💬 Apply for Canada Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">Study Permit</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">8–12 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">CAD 15K–40K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">3 Yr PGWP</div><div class="cl">Post Study Work</div></div>
+        <div class="cstat"><div class="cv">100+ DLI</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Acceptance letter from a DLI (Designated Learning Institution)</li>
+          <li>Valid passport with 6+ months beyond study duration</li>
+          <li>IELTS Academic: 6.0–6.5 or TOEFL equivalent</li>
+          <li>Proof of funds: CAD $10,000/year plus full tuition fees</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>Academic transcripts and degree certificates</li>
+          <li>Medical examination if required by IRCC</li>
+          <li>Biometrics at VFS Global (CAD $85 fee)</li>
+          <li>Police Clearance Certificate (PCC)</li>
+          <li>2–3 Letters of Recommendation (LORs)</li>
+          <li class="resume">Updated Resume / CV (highlight academics, projects, work if any)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">U of Toronto</div><div class="us">University of Toronto</div></div>
+          <div class="ui"><div class="un">UBC</div><div class="us">Univ. of British Columbia</div></div>
+          <div class="ui"><div class="un">McGill</div><div class="us">McGill University, Montreal</div></div>
+          <div class="ui"><div class="un">Waterloo</div><div class="us">University of Waterloo</div></div>
+          <div class="ui"><div class="un">Alberta</div><div class="us">University of Alberta</div></div>
+          <div class="ui"><div class="un">McMaster</div><div class="us">McMaster University</div></div>
+          <div class="ui"><div class="un">TMU</div><div class="us">Toronto Metropolitan Univ.</div></div>
+          <div class="ui"><div class="un">SFU</div><div class="us">Simon Fraser University</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">CAD $700–$1,500</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">CAD $300–$500</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">CAD $80–$150</span></div>
+          <div class="crow"><span class="ck">Health Insurance</span><span class="cvv">CAD $50–$100</span></div>
+          <div class="crow"><span class="ck">Phone and Other</span><span class="cvv">CAD $100–$200</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">CAD $1,300–$2,500</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get DLI Acceptance Letter</strong>Apply to a Designated Learning Institution in Canada and receive official acceptance letter.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Create IRCC Online Account</strong>Register at ircc.canada.ca and create your secure online account for applications.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Submit Study Permit Application</strong>Fill application form, upload all documents including resume, and pay the CAD $150 application fee.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Submit Biometrics at VFS Global</strong>Book biometrics appointment at VFS Global India. Fee is CAD $85. Fingerprints and photo taken.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Medical Examination</strong>Complete medical exam at an IRCC panel physician in Hyderabad or nearby city if asked.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Receive PAL Letter</strong>Get Port of Entry Letter of Introduction (PAL). This is your study permit approval to travel.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Travel and Get Study Permit ✈</strong>Show PAL at Canadian border. Officer issues the physical study permit on arrival.</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>After Graduation – PGWP</strong>Apply for Post Graduate Work Permit (up to 3 years). Then apply for Express Entry PR pathway.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#a00000,#d80621);">
+      <div><h3>🇨🇦 Ready to Study in Canada?</h3><p>Best post-study work and PR options in the world. Let us help you get there!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Canada%20Study%20Permit.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AUSTRALIA ===== -->
+  <div class="cpanel" id="panel-australia">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#00008B,#1a6b1a);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇦🇺</div>
+            <div><h2>Australia</h2><p>Student Visa Subclass 500 • 2–4 Year Post Study Work • World Class Quality of Life</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Australia%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for Australia Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">Subclass 500</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">4–6 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">AUD 20K–45K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">4 Yr PSW</div><div class="cl">Post Study Work</div></div>
+        <div class="cstat"><div class="cv">40+</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Confirmation of Enrollment (CoE) from Australian university</li>
+          <li>Valid passport with adequate validity</li>
+          <li>IELTS Academic: 6.0–6.5 or PTE equivalent</li>
+          <li>Proof of financial capacity: AUD $21,041 per year</li>
+          <li>Overseas Student Health Cover (OSHC) insurance</li>
+          <li>Genuine Temporary Entrant (GTE) statement</li>
+          <li>Academic transcripts and degree certificates</li>
+          <li>English medium of instruction certificate</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>2–3 Letters of Recommendation (LORs)</li>
+          <li>Health and character clearance</li>
+          <li class="resume">Updated Resume / CV (academic background and any work experience)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">ANU</div><div class="us">Australian National University</div></div>
+          <div class="ui"><div class="un">Melbourne</div><div class="us">University of Melbourne</div></div>
+          <div class="ui"><div class="un">Sydney</div><div class="us">University of Sydney</div></div>
+          <div class="ui"><div class="un">UNSW</div><div class="us">Univ. of New South Wales</div></div>
+          <div class="ui"><div class="un">QUT</div><div class="us">Queensland Univ. of Technology</div></div>
+          <div class="ui"><div class="un">Monash</div><div class="us">Monash University, Melbourne</div></div>
+          <div class="ui"><div class="un">Deakin</div><div class="us">Deakin University, Victoria</div></div>
+          <div class="ui"><div class="un">RMIT</div><div class="us">RMIT University, Melbourne</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">AUD $800–$1,500</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">AUD $300–$500</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">AUD $100–$180</span></div>
+          <div class="crow"><span class="ck">OSHC Insurance</span><span class="cvv">AUD $50–$100</span></div>
+          <div class="crow"><span class="ck">Phone and Internet</span><span class="cvv">AUD $40–$80</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">AUD $1,400–$2,500</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Receive CoE from University</strong>Get Confirmation of Enrollment after paying the deposit to your Australian university.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Purchase OSHC Insurance</strong>Buy Overseas Student Health Cover online from approved providers like Medibank or BUPA.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Create ImmiAccount</strong>Register on Australia's ImmiAccount portal at immi.homeaffairs.gov.au.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Lodge Student Visa Application</strong>Submit Form 157A online. Upload CoE, OSHC, IELTS, financials, GTE statement and resume. Fee AUD $650.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Health Examination</strong>If requested, complete medical exam at HAP-approved panel physician in India.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Character Check</strong>Submit police clearance certificate from India. Declare any criminal history if applicable.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>eVisa Granted ✈</strong>Electronic visa (eVisa) sent to your email. No physical stamp needed. Ready to fly!</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>Post Study – Temporary Graduate Visa (485)</strong>Apply for Subclass 485 after graduation. Get 2–4 years to work in Australia based on your degree.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#00008B,#1a6b1a);">
+      <div><h3>🇦🇺 Ready to Study in Australia?</h3><p>Beautiful lifestyle, excellent education, great post-study work. Apply today!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Australia%20Student%20Visa%20Subclass%20500.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NEW ZEALAND ===== -->
+  <div class="cpanel" id="panel-nz">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#00247D,#CC142B);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇳🇿</div>
+            <div><h2>New Zealand</h2><p>Student Visa • Safe and Peaceful Country • Post Study Work Visa up to 3 Years</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20New%20Zealand%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for NZ Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">Student Visa</div><div class="cl">Visa Type (FEE555)</div></div>
+        <div class="cstat"><div class="cv">4–8 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">NZD 18K–35K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">3 Yr PSWV</div><div class="cl">Post Study Work</div></div>
+        <div class="cstat"><div class="cv">8 Top</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Offer of Place letter from a New Zealand institution</li>
+          <li>Valid passport (min 6 months beyond course end date)</li>
+          <li>IELTS Academic: 5.5–6.5 or equivalent English proof</li>
+          <li>Proof of funds: NZD $15,000/year plus full tuition fees</li>
+          <li>Completed visa application form (INZ 1012 – online)</li>
+          <li>Two recent passport-size photographs</li>
+          <li>Academic transcripts and certificates</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>Medical and chest X-ray certificate (for India students)</li>
+          <li>Police Clearance Certificate (PCC) from India</li>
+          <li>Letters of Recommendation (LORs)</li>
+          <li class="resume">Updated Resume / CV (academics, skills, achievements)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">Auckland</div><div class="us">University of Auckland</div></div>
+          <div class="ui"><div class="un">Otago</div><div class="us">University of Otago, Dunedin</div></div>
+          <div class="ui"><div class="un">Victoria</div><div class="us">Victoria Univ. of Wellington</div></div>
+          <div class="ui"><div class="un">Canterbury</div><div class="us">Univ. of Canterbury, Christchurch</div></div>
+          <div class="ui"><div class="un">Massey</div><div class="us">Massey University</div></div>
+          <div class="ui"><div class="un">AUT</div><div class="us">Auckland Univ. of Technology</div></div>
+          <div class="ui"><div class="un">Waikato</div><div class="us">University of Waikato</div></div>
+          <div class="ui"><div class="un">Lincoln</div><div class="us">Lincoln University</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">NZD $700–$1,400</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">NZD $300–$500</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">NZD $80–$150</span></div>
+          <div class="crow"><span class="ck">Health Insurance</span><span class="cvv">NZD $50–$120</span></div>
+          <div class="crow"><span class="ck">Phone and Internet</span><span class="cvv">NZD $40–$80</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">NZD $1,200–$2,300</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Choose University and Get Offer Letter</strong>Apply to a New Zealand institution (must be NZQA-approved) and receive your Offer of Place letter.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Pay Tuition Deposit</strong>Pay the required tuition deposit to confirm enrollment. The institution sends fee receipt.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Prepare All Documents</strong>Gather IELTS, financials, SOP, resume, transcripts, LORs, PCC and medical certificate.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Apply Online via Immigration NZ</strong>Complete application form INZ 1012 online at immigration.govt.nz. Pay application fee NZD $330.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Medical Examination and Chest X-Ray</strong>Indian nationals must complete a medical exam and chest X-ray at a NZ Immigration approved panel physician.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Submit Biometrics</strong>If required, submit biometrics at VFS Global New Zealand visa application centre in India.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Visa Approved – eVisa ✈</strong>Receive electronic visa (eVisa) via email. No physical sticker needed in most cases. Ready to fly!</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>Post Study Work Visa (PSWV)</strong>After completing 30 weeks of study, apply for Post Study Work Visa. Work anywhere in NZ for up to 3 years.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#00247D,#CC142B);">
+      <div><h3>🇳🇿 Ready to Study in New Zealand?</h3><p>Safe, peaceful country with world-class education and stunning natural beauty. Apply today!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20New%20Zealand%20Student%20Visa.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== IRELAND ===== -->
+  <div class="cpanel" id="panel-ireland">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#169B62,#FF883E);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇮🇪</div>
+            <div><h2>Ireland</h2><p>Study Visa (D Study) • EU Access • 2-Year Stay Back Option After Graduation</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Ireland%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for Ireland Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">D Study Visa</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">4–8 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">€10K–€25K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">2 Yr Stay Back</div><div class="cl">Post Study Option</div></div>
+        <div class="cstat"><div class="cv">7 Top</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Offer letter from an Irish university or college (ILEP approved)</li>
+          <li>Valid passport with min 12 months validity beyond course end</li>
+          <li>IELTS Academic: 6.0–6.5 or equivalent English proficiency</li>
+          <li>Proof of funds: €7,000 minimum in bank (some universities require more)</li>
+          <li>Full tuition fee payment receipt or bank guarantee</li>
+          <li>Private medical insurance for the duration of stay</li>
+          <li>Academic transcripts and degree certificates</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>Letters of Recommendation (LORs)</li>
+          <li>Police Clearance Certificate (PCC) from India</li>
+          <li>Completed visa application form (online at AVATS portal)</li>
+          <li class="resume">Updated Resume / CV (academic background, skills, projects)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">Trinity</div><div class="us">Trinity College Dublin</div></div>
+          <div class="ui"><div class="un">UCD</div><div class="us">University College Dublin</div></div>
+          <div class="ui"><div class="un">UCC</div><div class="us">Univ. College Cork</div></div>
+          <div class="ui"><div class="un">NUI Galway</div><div class="us">Univ. of Galway</div></div>
+          <div class="ui"><div class="un">DCU</div><div class="us">Dublin City University</div></div>
+          <div class="ui"><div class="un">Maynooth</div><div class="us">Maynooth University, Kildare</div></div>
+          <div class="ui"><div class="un">Limerick</div><div class="us">Univ. of Limerick</div></div>
+          <div class="ui"><div class="un">Griffith</div><div class="us">Griffith College, Dublin</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">€700–€1,400</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">€200–€350</span></div>
+          <div class="crow"><span class="ck">Transport</span><span class="cvv">€80–€150</span></div>
+          <div class="crow"><span class="ck">Health Insurance</span><span class="cvv">€50–€100</span></div>
+          <div class="crow"><span class="ck">Phone and Internet</span><span class="cvv">€30–€60</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">€1,100–€2,100</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get Offer from ILEP Approved College</strong>Apply to an Irish Learning Education Programme (ILEP) approved college or university in Ireland.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Pay Full Tuition Fees Upfront</strong>Ireland requires most students to pay full year tuition before visa application. This is important!</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Arrange Accommodation and Insurance</strong>Book accommodation in Ireland. Purchase private medical insurance for your full stay period.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Apply Online at AVATS Portal</strong>Complete Irish visa application at avats.ie. Upload all documents. Pay the visa fee of €60.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Submit at Irish Visa Office or VFS</strong>Submit printed application, passport, and all documents at the Irish Embassy or VFS Global in India.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Biometrics if Required</strong>Some applicants may be asked to provide biometrics at the visa application centre.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Visa Approved – D Study Visa ✈</strong>Receive D Study visa stamp in passport. On arrival register at local immigration office (GNIB/IRP).</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>Post Study – Third Level Graduate Scheme</strong>After graduating apply for 2-year Third Level Graduate Programme permission to remain and work in Ireland.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#169B62,#0a6640);">
+      <div><h3>🇮🇪 Ready to Study in Ireland?</h3><p>English speaking EU country with top tech companies like Google, Meta, Apple all based in Dublin!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Ireland%20Student%20Visa.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SINGAPORE ===== -->
+  <div class="cpanel" id="panel-singapore">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#c0002a,#EF3340);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇸🇬</div>
+            <div><h2>Singapore</h2><p>Student Pass (SVP) • Asia's Education Hub • Work 16 Hours Per Week While Studying</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Singapore%20Student%20Pass%20help." target="_blank" class="bwa">💬 Apply for Singapore Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">Student Pass</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">2–4 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">SGD 18K–35K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">16 hrs/week</div><div class="cl">Work Allowed</div></div>
+        <div class="cstat"><div class="cv">6 Top</div><div class="cl">Universities</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents</h3>
+        <ul class="rlist">
+          <li>Acceptance letter from Singapore institution (NUS, NTU, SIM etc.)</li>
+          <li>Valid passport with 6+ months validity</li>
+          <li>IELTS: 6.0+ or equivalent English proficiency proof</li>
+          <li>Proof of financial means to support studies and stay</li>
+          <li>Academic certificates and mark sheets</li>
+          <li>Student Pass application via SOLAR system (done by institution)</li>
+          <li>Recent passport-size photographs (white background)</li>
+          <li>Statement of Purpose (SOP)</li>
+          <li>Medical examination if required by ICA</li>
+          <li>Letters of Recommendation (LORs)</li>
+          <li class="resume">Updated Resume / CV (highlight STEM skills and achievements)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">NUS</div><div class="us">National University of Singapore</div></div>
+          <div class="ui"><div class="un">NTU</div><div class="us">Nanyang Technological University</div></div>
+          <div class="ui"><div class="un">SMU</div><div class="us">Singapore Management University</div></div>
+          <div class="ui"><div class="un">SIM</div><div class="us">Singapore Institute of Management</div></div>
+          <div class="ui"><div class="un">SUTD</div><div class="us">SG Univ. of Technology and Design</div></div>
+          <div class="ui"><div class="un">SUSS</div><div class="us">SG Univ. of Social Sciences</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">SGD $600–$1,200</span></div>
+          <div class="crow"><span class="ck">Food and Dining</span><span class="cvv">SGD $300–$500</span></div>
+          <div class="crow"><span class="ck">Transport (MRT)</span><span class="cvv">SGD $80–$120</span></div>
+          <div class="crow"><span class="ck">Phone and Internet</span><span class="cvv">SGD $30–$60</span></div>
+          <div class="crow"><span class="ck">Leisure and Other</span><span class="cvv">SGD $100–$200</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">SGD $1,200–$2,100</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get Admission from Singapore Institution</strong>Apply to NUS, NTU, SIM or other approved Singapore institution and receive acceptance letter.</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Institution Submits eForm16 via SOLAR</strong>Your Singapore institution applies for Student Pass on your behalf through the SOLAR system at ICA.</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Receive In-Principal Approval (IPA) Letter</strong>ICA sends the IPA letter to you via your institution. This is your visa approval to enter Singapore.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vt"><strong>Travel to Singapore</strong>Enter Singapore using the IPA letter at immigration checkpoint. Single entry allowed with IPA.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Medical Examination in Singapore</strong>Undergo medical examination at an ICA-approved clinic within the first week of arrival.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>Collect Student Pass Card ✈</strong>Visit ICA office (Student Pass Unit) with your institution to collect the physical Student Pass card.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#c0002a,#EF3340);">
+      <div><h3>🇸🇬 Ready to Study in Singapore?</h3><p>Asia's top education hub with amazing tech career opportunities. Apply today!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Singapore%20Student%20Pass.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EUROPE ===== -->
+  <div class="cpanel" id="panel-europe">
+    <div class="chero">
+      <div class="cbanner" style="background:linear-gradient(135deg,#003399,#0055cc);">
+        <div class="cbi">
+          <div class="ctitle"><div class="cflag">🇪🇺</div>
+            <div><h2>Europe</h2><p>Germany 🇩🇪 • France 🇫🇷 • Netherlands 🇳🇱 • FREE Tuition Available in Germany!</p></div>
+          </div>
+          <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20Europe%20Student%20Visa%20help." target="_blank" class="bwa">💬 Apply for Europe Visa</a>
+        </div>
+      </div>
+      <div class="cstats">
+        <div class="cstat"><div class="cv">National Visa D</div><div class="cl">Visa Type</div></div>
+        <div class="cstat"><div class="cv">4–8 Weeks</div><div class="cl">Processing Time</div></div>
+        <div class="cstat"><div class="cv">€0–€20K</div><div class="cl">Tuition/Year</div></div>
+        <div class="cstat"><div class="cv">18–24 Months</div><div class="cl">Job Seeker Visa</div></div>
+        <div class="cstat"><div class="cv">4,000+</div><div class="cl">Institutions</div></div>
+      </div>
+    </div>
+    <div class="ccontent">
+      <div class="ccard">
+        <h3>📋 Required Documents – Germany</h3>
+        <ul class="rlist">
+          <li>University admission letter (Zulassungsbescheid) from German university</li>
+          <li>Valid passport (min 6 months beyond course duration)</li>
+          <li>German blocked account (Sperrkonto): €11,208 per year</li>
+          <li>German language B1/B2 or English medium course proof</li>
+          <li>APS Certificate from APS India (mandatory for Indian students)</li>
+          <li>Health insurance coverage for Germany</li>
+          <li>Statement of Purpose and motivation letter</li>
+          <li>Academic certificates and transcripts</li>
+          <li>Proof of accommodation in Germany</li>
+          <li>Letters of Recommendation (LORs)</li>
+          <li class="resume">Updated Resume / CV (academic and research background)</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <h3>🏫 Top European Universities</h3>
+        <div class="ugrid">
+          <div class="ui"><div class="un">TU Munich</div><div class="us">Technical Univ. Munich 🇩🇪</div></div>
+          <div class="ui"><div class="un">Heidelberg</div><div class="us">Heidelberg University 🇩🇪</div></div>
+          <div class="ui"><div class="un">TU Delft</div><div class="us">Delft University 🇳🇱</div></div>
+          <div class="ui"><div class="un">Paris Saclay</div><div class="us">Univ. Paris-Saclay 🇫🇷</div></div>
+          <div class="ui"><div class="un">UCD</div><div class="us">Univ. College Dublin 🇮🇪</div></div>
+          <div class="ui"><div class="un">Bologna</div><div class="us">Univ. of Bologna 🇮🇹</div></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>💰 Cost of Living – Germany Monthly</h3>
+        <div class="cgrid2">
+          <div class="crow"><span class="ck">Accommodation</span><span class="cvv">€300–€700</span></div>
+          <div class="crow"><span class="ck">Food and Groceries</span><span class="cvv">€150–€250</span></div>
+          <div class="crow"><span class="ck">Transport (Semester Ticket)</span><span class="cvv">€30–€80</span></div>
+          <div class="crow"><span class="ck">Health Insurance</span><span class="cvv">€80–€120</span></div>
+          <div class="crow"><span class="ck">Other Expenses</span><span class="cvv">€100–€200</span></div>
+          <div class="crow" style="background:var(--bp)"><span class="ck" style="font-weight:700">Total Monthly</span><span class="cvv" style="color:var(--bb)">€700–€1,400</span></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h3>🪜 Visa Process – Germany Step by Step</h3>
+        <div class="vsteps">
+          <div class="vs"><div class="vn">1</div><div class="vt"><strong>Get APS Certificate First</strong>Indian students must get APS certificate from APS India in New Delhi before applying. Mandatory!</div></div>
+          <div class="vs"><div class="vn">2</div><div class="vt"><strong>Get University Admission Letter</strong>Apply to German university and receive Zulassungsbescheid (admission letter).</div></div>
+          <div class="vs"><div class="vn">3</div><div class="vt"><strong>Open German Blocked Account</strong>Open Sperrkonto with €11,208 via Expatrio, Fintiba or Deutsche Bank. Funds are released monthly.</div></div>
+          <div class="vs"><div class="vn">4</div><div class="vn"></div><div class="vt"><strong>Book Appointment at German Consulate</strong>Book visa appointment at German Consulate or Embassy in Hyderabad, Mumbai, Chennai or Delhi.</div></div>
+          <div class="vs"><div class="vn">5</div><div class="vt"><strong>Submit Visa Application</strong>Attend appointment with all original documents. Pay visa fee €75. Interview may be held.</div></div>
+          <div class="vs"><div class="vn">6</div><div class="vt"><strong>National Visa D Approved ✈</strong>Receive National Type-D visa. Valid for 3 months to enter Germany and convert to residence permit.</div></div>
+          <div class="vs"><div class="vn">7</div><div class="vt"><strong>Register at Bürgeramt on Arrival</strong>Register your address at local Bürgeramt within 14 days of arriving in Germany. Mandatory!</div></div>
+          <div class="vs"><div class="vn">8</div><div class="vt"><strong>18-Month Job Seeker Visa After Graduation</strong>After completing degree apply for 18-month Aufenthaltserlaubnis zur Arbeitssuche to find job in Germany.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="abanner" style="background:linear-gradient(135deg,#003399,#0055cc);">
+      <div><h3>🇪🇺 Ready to Study in Europe?</h3><p>German universities offer FREE tuition! Amazing opportunity. Ask us how to get in!</p></div>
+      <div class="abtns">
+        <a href="https://wa.me/917680821953?text=Hi!%20I%20want%20to%20study%20in%20Europe.%20Please%20guide%20me." target="_blank" class="bwa">💬 Apply via WhatsApp</a>
+        <a href="tel:+917680821953" class="bgold">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svcs" id="services">
+  <p class="slbl rv">What We Offer</p>
+  <h2 class="stitle rv">Our Complete <span>Services</span></h2>
+  <div class="sgrid">
+    <div class="scard rv"><div class="sico">✅</div><h3>Visa Eligibility Assessment</h3><p>We analyse your academics, finances and goals to find the best country and visa pathway for you across 8 countries.</p></div>
+    <div class="scard rv"><div class="sico">🎓</div><h3>University and Course Consultation</h3><p>Get matched to the right university and course in USA, UK, Canada, Australia, NZ, Ireland, Singapore or Europe.</p></div>
+    <div class="scard rv"><div class="sico">📄</div><h3>Resume and Document Preparation</h3><p>Professional resume writing, SOP, LORs, transcript verification — everything prepared to embassy standards.</p></div>
+    <div class="scard rv"><div class="sico">📝</div><h3>Application Submission</h3><p>End-to-end management of your university and visa applications with real-time tracking at every step.</p></div>
+    <div class="scard rv"><div class="sico">✈️</div><h3>Pre-Departure Briefing</h3><p>Accommodation, banking, travel, SIM cards — complete guidance before you fly to your dream country.</p></div>
+    <div class="scard rv"><div class="sico">💰</div><h3>Scholarship Guidance</h3><p>We identify scholarship and financial aid options to significantly reduce your study abroad costs.</p></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec psec" id="process">
+  <p class="slbl rv">Simple Steps</p>
+  <h2 class="stitle rv">How It <span>Works</span></h2>
+  <div class="pgrid">
+    <div class="pstep rv"><div class="pnum">1</div><h3>Free Consultation</h3><p>Book a free session to discuss your goals and choose the right country and course.</p></div>
+    <div class="pstep rv"><div class="pnum">2</div><h3>Profile Check</h3><p>We assess academics, finances, IELTS scores and build the best visa strategy for you.</p></div>
+    <div class="pstep rv"><div class="pnum">3</div><h3>Resume and Docs</h3><p>We build your resume, write SOP, collect LORs and verify all documents to embassy standards.</p></div>
+    <div class="pstep rv"><div class="pnum">4</div><h3>Apply and Track</h3><p>We submit all applications and keep you updated at every single step of the process.</p></div>
+    <div class="pstep rv"><div class="pnum">5</div><h3>Visa Approved 🎉</h3><p>Full pre-departure briefing so you are 100% ready to fly to your dream country!</p></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec wsec" id="why">
+  <div class="wgrid">
+    <div class="wcnt rv">
+      <p class="slbl" style="text-align:left">Why Choose Us</p>
+      <h2>Trusted Visa Experts<br/>in Hanamkonda</h2>
+      <p>AreoPathVisas is Hanamkonda's dedicated student visa consultancy. We understand the aspirations of Telangana students and are committed to making your international education dream real.</p>
+      <div class="wfts">
+        <div class="wf"><div class="wi">🏆</div><div><h4>98% Visa Success Rate</h4><p>700+ students now studying abroad with our guidance and support.</p></div></div>
+        <div class="wf"><div class="wi">📄</div><div><h4>Professional Resume Writing</h4><p>We build strong resumes that universities and embassies love. Included free!</p></div></div>
+        <div class="wf"><div class="wi">📍</div><div><h4>Local to Hanamkonda</h4><p>We understand the background and challenges of Telangana and Andhra Pradesh students.</p></div></div>
+        <div class="wf"><div class="wi">💬</div><div><h4>Telugu, Hindi and English</h4><p>Consultations in your preferred language. No communication barriers at all.</p></div></div>
+      </div>
+    </div>
+    <div class="wvis rv">
+      <h3>📞 Book FREE Consultation Now</h3>
+      <div class="fbadge">FREE<br/>CONSULTATION</div>
+      <a href="tel:+917680821953" class="cl2">📱 &nbsp; 7680-821953</a>
+      <a href="https://wa.me/917680821953?text=Hi%20AreoPathVisas!" target="_blank" class="cl2">💬 &nbsp; WhatsApp Now</a>
+      <a href="mailto:areopathvisas@gmail.com" class="cl2">✉️ &nbsp; areopathvisas@gmail.com</a>
+      <div class="cl2" style="cursor:default;">📍 &nbsp; Hanamkonda, Telangana, India</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec tsec" id="testimonials">
+  <p class="slbl rv">Student Stories</p>
+  <h2 class="stitle rv">What Our <span>Students Say</span></h2>
+  <div class="tgrid">
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"Got my USA F-1 visa in 8 weeks! They wrote my resume and SOP perfectly. Now at Arizona State University studying Computer Science!"</p><div class="tau">Rahul Reddy</div><div class="tdes">📍 Arizona, USA 🇺🇸</div></div>
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"Got into University of Manchester with scholarship. AreoPathVisas prepared my resume, SOP and all documents. Explained everything in Telugu!"</p><div class="tau">Anusha Naik</div><div class="tdes">📍 Manchester, UK 🇬🇧</div></div>
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"Canada study permit approved in 10 weeks. Now at University of Toronto! Their resume and SOP preparation was top class."</p><div class="tau">Karthik Sharma</div><div class="tdes">📍 Toronto, Canada 🇨🇦</div></div>
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"Australia Subclass 500 approved! Into Monash University. Best consultancy in Hanamkonda. Trusted them completely and they delivered!"</p><div class="tau">Priya Reddy</div><div class="tdes">📍 Melbourne, Australia 🇦🇺</div></div>
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"New Zealand student visa approved in 5 weeks! University of Auckland accepted me. AreoPathVisas guided every step including resume writing."</p><div class="tau">Venkat Naidu</div><div class="tdes">📍 Auckland, New Zealand 🇳🇿</div></div>
+    <div class="tc rv"><div class="stars">★★★★★</div><p>"Ireland D Study Visa approved! Now at Trinity College Dublin. AreoPathVisas handled my full application including resume and all documents!"</p><div class="tau">Sowmya Rao</div><div class="tdes">📍 Dublin, Ireland 🇮🇪</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="consec" id="contact">
+  <div class="conin">
+    <p class="slbl rv">Get In Touch</p>
+    <h2 class="stitle rv">Start Your Journey <span style="color:var(--ac)">Today</span></h2>
+    <div class="cgr">
+      <div class="cfrm rv">
+        <h3>📋 Request a Free Callback</h3>
+        <div class="fg"><label>Full Name *</label><input type="text" id="fname" placeholder="Your full name"/></div>
+        <div class="fg"><label>Phone Number *</label><input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX"/></div>
+        <div class="fg"><label>Email Address</label><input type="email" id="femail" placeholder="your@email.com"/></div>
+        <div class="fg"><label>Preferred Destination</label>
+          <select id="fdest">
+            <option value="">Select country</option>
+            <option>🇺🇸 USA</option>
+            <option>🇬🇧 United Kingdom</option>
+            <option>🇨🇦 Canada</option>
+            <option>🇦🇺 Australia</option>
+            <option>🇳🇿 New Zealand</option>
+            <option>🇮🇪 Ireland</option>
+            <option>🇸🇬 Singapore</option>
+            <option>🇪🇺 Europe</option>
+            <option>Not decided yet</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message or Query</label><textarea id="fmsg" placeholder="Tell us about your study plans..."></textarea></div>
+        <button class="bsub" onclick="submitForm()">Send via WhatsApp 🚀</button>
+      </div>
+      <div class="cin rv">
+        <h3>We Are Here to Help You</h3>
+        <p>Visit our office in Hanamkonda or reach out anytime via phone or WhatsApp. Guidance in Telugu, Hindi and English.</p>
+        <div class="icds">
+          <a href="tel:+917680821953" class="icd"><span class="ic">📱</span><div class="it"><h4>Call Us</h4><p>7680-821953</p></div></a>
+          <a href="https://wa.me/917680821953?text=Hi%20AreoPathVisas!" target="_blank" class="icd"><span class="ic">💬</span><div class="it"><h4>WhatsApp</h4><p>Chat with us instantly</p></div></a>
+          <div class="icd" style="cursor:default"><span class="ic">📍</span><div class="it"><h4>Our Office</h4><p>Hanamkonda, Telangana, India</p></div></div>
+          <div class="icd" style="cursor:default"><span class="ic">🕐</span><div class="it"><h4>Office Hours</h4><p>Monday to Saturday: 9 AM to 7 PM</p></div></div>
+        </div>
+        <div class="sbs">
+          <a href="https://wa.me/917680821953?text=Hello%20AreoPathVisas!" target="_blank" class="sb sbwa">💬 WhatsApp Now</a>
+          <a href="tel:+917680821953" class="sb sbph">📞 Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="flo">Areo<span>Path</span>Visas</div>
+  <p>Student Study Visa Services — Hanamkonda, Telangana, India</p>
+  <p>📞 7680-821953 &nbsp;|&nbsp; 📍 Hanamkonda, Telangana</p>
+  <div class="fls">
+    <a href="#home">Home</a><a href="#dest">Destinations</a><a href="#services">Services</a>
+    <a href="#process">Process</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+    <a href="https://wa.me/917680821953" target="_blank">WhatsApp</a>
+  </div>
+  <div class="fdiv"></div>
+  <p class="fcp">© 2026 AreoPathVisas. All rights reserved. Hanamkonda, Telangana, India</p>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+});
+var order=['usa','uk','canada','australia','nz','ireland','singapore','europe'];
+function switchTab(id,btn){
+  document.querySelectorAll('.cpanel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.ctab').forEach(function(b){b.classList.remove('active');});
+  document.getElementById('panel-'+id).classList.add('active');
+  btn.classList.add('active');
+  setTimeout(function(){document.getElementById('dest').scrollIntoView({behavior:'smooth',block:'start'});},50);
+}
+function openC(id){
+  var tabs=document.querySelectorAll('.ctab');
+  var idx=order.indexOf(id);
+  if(idx>-1){switchTab(id,tabs[idx]);}
+}
+var rv=document.querySelectorAll('.rv');
+var ob=new IntersectionObserver(function(entries){
+  entries.forEach(function(e,i){
+    if(e.isIntersecting) setTimeout(function(){e.target.classList.add('vis');},i*60);
+  });
+},{threshold:.08});
+rv.forEach(function(el){ob.observe(el);});
+function submitForm(){
+  var n=document.getElementById('fname').value.trim();
+  var p=document.getElementById('fphone').value.trim();
+  var d=document.getElementById('fdest').value;
+  var m=document.getElementById('fmsg').value.trim();
+  if(!n||!p){alert('Please enter your name and phone number.');return;}
+  var msg=encodeURIComponent('Hello AreoPathVisas!\n\nNew enquiry from website:\n\nName: '+n+'\nPhone: '+p+'\n'+(d?'Destination: '+d+'\n':'')+(m?'Message: '+m:''));
+  window.open('https://wa.me/917680821953?text='+msg,'_blank');
+  var t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},3500);
+  ['fname','fphone','femail','fdest','fmsg'].forEach(function(id){document.getElementById(id).value='';});
+}
+</script>
+</body>
+</html>
